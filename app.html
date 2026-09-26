@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANCDA — Interactive Particle Universe</title>
-    <meta name="description" content="ANCDA — Real-time 3D particle visualization engine powered by WebGL bloom, AI hand tracking and GPU cursor physics. 15,000 particles react to your hands, cursor, and touch. Zero install.">
-    <meta name="keywords" content="ANCDA, WebGL, Three.js, interactive, 3D particles, MediaPipe, hand tracking, bloom, visualization, IT demo">
+    <title>ANCDA — 互动粒子宇宙</title>
+    <meta name="description" content="ANCDA — 基于 WebGL 光晕、AI 手部识别和 GPU 鼠标物理的实时 3D 粒子可视化引擎。15,000 个粒子会响应你的手势、鼠标和触摸操作，无需安装。">
+    <meta name="keywords" content="ANCDA, WebGL, Three.js, 互动, 3D 粒子, MediaPipe, 手部识别, 光晕, 可视化, IT 演示">
     <meta name="author" content="Harshit Gupta">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ANCDA — WebGL Interactive Particle Engine">
-    <meta property="og:description" content="15,000 bloom-lit particles react to your hands in real-time. GPU cursor physics, AI hand tracking, 9 shape templates. No install.">
+    <meta property="og:title" content="ANCDA — WebGL 互动粒子引擎">
+    <meta property="og:description" content="15,000 个带光晕的粒子会实时响应你的手势。GPU 鼠标物理、AI 手部识别、9 种形状模板，无需安装。">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ANCDA — WebGL Particle Engine">
 
@@ -739,7 +739,7 @@
         </svg>
         <div class="ld-title">ANCDA</div>
         <div class="ld-bar-wrap"><div class="ld-bar"></div></div>
-        <div class="ld-sub">WebGL Particle Engine · Illuminate · Interact</div>
+        <div class="ld-sub">WebGL 粒子引擎 · 点亮 · 互动</div>
     </div>
 
     <!-- ── Onboarding ─────────────────────────────────────────── -->
@@ -754,22 +754,22 @@
                 <circle cx="74" cy="40" r="2.5" fill="#ec4899" opacity="0.85"><animateTransform attributeName="transform" type="rotate" from="180 40 40" to="540 40 40" dur="5s" repeatCount="indefinite"/></circle>
             </svg>
             <h3 class="ob-title">ANCDA</h3>
-            <p class="ob-sub">Illuminate · Interact · Inspire</p>
+            <p class="ob-sub">点亮 · 互动 · 探索</p>
             <div class="ob-tips">
                 <div class="ob-tip">
                     <span class="ob-tip-ic">🖱️</span>
-                    <span class="ob-tip-tx"><b>Move cursor</b> — particles flee your cursor. <b>Click &amp; hold</b> — they rush toward it.</span>
+                    <span class="ob-tip-tx"><b>移动鼠标</b> — 粒子会避开鼠标。<b>点击并按住</b> — 粒子会向鼠标聚拢。</span>
                 </div>
                 <div class="ob-tip">
                     <span class="ob-tip-ic">🖐️</span>
-                    <span class="ob-tip-tx"><b>Show your hand</b> to the camera — open palm expands, closed fist contracts the cloud.</span>
+                    <span class="ob-tip-tx"><b>向摄像头伸出手掌</b> — 张开手掌让粒子变大，握拳让粒子变小。</span>
                 </div>
                 <div class="ob-tip">
                     <span class="ob-tip-ic">👌</span>
-                    <span class="ob-tip-tx"><b>OK gesture</b> to cycle colors. Press <b>1–9</b> to switch shapes.</span>
+                    <span class="ob-tip-tx"><b>OK 手势</b>切换颜色。按 <b>1–9</b> 切换形状。</span>
                 </div>
             </div>
-            <button class="ob-go" onclick="dismissOnboarding()">Launch Experience →</button>
+            <button class="ob-go" onclick="dismissOnboarding()">开始体验 →</button>
         </div>
     </div>
 
@@ -794,7 +794,7 @@
                 <div class="guide-item"><b><span class="guide-kbd">H</span>隐藏面板</b><p>隐藏右侧控制面板，再按一次 H 显示。</p></div>
                 <div class="guide-item"><b><span class="guide-kbd">S</span>保存截图</b><p>保存当前粒子画面。</p></div>
                 <div class="guide-item"><b><span class="guide-kbd">F</span>全屏</b><p>切换全屏显示。</p></div>
-                <div class="guide-item"><b>📷 Camera 摄像头</b><p>点击 Enable 开启手势识别；再次点击可关闭。</p></div>
+                <div class="guide-item"><b>📷 摄像头</b><p>点击“启用”开启手势识别；再次点击可关闭。</p></div>
             </div>
         </div>
     </div>
@@ -803,13 +803,13 @@
     <div id="canvas-container"></div>
 
     <!-- Back to landing page -->
-    <a href="index.html" id="back-home" title="Back to home">
+    <a href="index.html" id="back-home" title="返回首页">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-        Home
+        首页
     </a>
 
     <!-- Panel toggle when hidden -->
-    <button id="toggle-panel" title="Show panel">⊞</button>
+    <button id="toggle-panel" title="显示面板">⊞</button>
 
     <!-- ── Control Panel ──────────────────────────────────────── -->
     <div id="panel">
@@ -824,57 +824,57 @@
                 </svg>
                 <span class="brand-name">ANCDA</span>
             </div>
-            <button class="btn-x" id="btn-hide" title="Hide (H)">✕</button>
+            <button class="btn-x" id="btn-hide" title="隐藏（H）">✕</button>
         </div>
 
         <!-- Shapes -->
         <div class="sec">
             <div class="sec-hd">
-                <span class="sec-lbl">Shape</span>
-                <span class="sec-hint">keys 1–9</span>
+                <span class="sec-lbl">形状</span>
+                <span class="sec-hint">按键 1–9</span>
             </div>
             <div class="shape-grid" id="shape-grid">
-                <button class="sb on" data-shape="fireworks"><span class="sb-ic">💥</span>Fireworks</button>
-                <button class="sb" data-shape="heart"><span class="sb-ic">❤️</span>Heart</button>
-                <button class="sb" data-shape="flower"><span class="sb-ic">🌸</span>Flower</button>
-                <button class="sb" data-shape="saturn"><span class="sb-ic">🪐</span>Saturn</button>
-                <button class="sb" data-shape="eye"><span class="sb-ic">👁️</span>Eye</button>
-                <button class="sb" data-shape="butterfly"><span class="sb-ic">🦋</span>Butterfly</button>
+                <button class="sb on" data-shape="fireworks"><span class="sb-ic">💥</span>烟花</button>
+                <button class="sb" data-shape="heart"><span class="sb-ic">❤️</span>爱心</button>
+                <button class="sb" data-shape="flower"><span class="sb-ic">🌸</span>花朵</button>
+                <button class="sb" data-shape="saturn"><span class="sb-ic">🪐</span>土星</button>
+                <button class="sb" data-shape="eye"><span class="sb-ic">👁️</span>眼睛</button>
+                <button class="sb" data-shape="butterfly"><span class="sb-ic">🦋</span>蝴蝶</button>
                 <button class="sb" data-shape="dna"><span class="sb-ic">🧬</span>DNA</button>
-                <button class="sb" data-shape="vortex"><span class="sb-ic">🌪️</span>Vortex</button>
-                <button class="sb" data-shape="blackhole"><span class="sb-ic">🕳️</span>Black Hole</button>
+                <button class="sb" data-shape="vortex"><span class="sb-ic">🌪️</span>漩涡</button>
+                <button class="sb" data-shape="blackhole"><span class="sb-ic">🕳️</span>黑洞</button>
             </div>
         </div>
 
         <!-- Color -->
         <div class="sec">
             <div class="sec-hd">
-                <span class="sec-lbl">Color</span>
-                <span class="sec-hint">👌 OK to cycle</span>
+                <span class="sec-lbl">颜色</span>
+                <span class="sec-hint">👌 OK键切换</span>
             </div>
             <div class="color-row">
                 <input type="color" id="picker" value="#00f2ff">
-                <button class="music-toggle" id="btn-music" type="button" title="Background music">🎵 音乐 OFF</button>
+                <button class="music-toggle" id="btn-music" type="button" title="背景音乐">🎵 音乐 关闭</button>
             </div>
             <div class="presets" id="presets"></div>
         </div>
 
         <!-- Controls -->
         <div class="sec">
-            <div class="sec-hd"><span class="sec-lbl">Controls</span></div>
+            <div class="sec-hd"><span class="sec-lbl">控制</span></div>
             <div class="sliders">
                 <div class="sl-row">
-                    <span class="sl-n">Speed</span>
+                    <span class="sl-n">速度</span>
                     <input type="range" id="sl-speed" min="1" max="28" value="8">
                     <span class="sl-v" id="sv-speed">0.08</span>
                 </div>
                 <div class="sl-row">
-                    <span class="sl-n">Size</span>
+                    <span class="sl-n">大小</span>
                     <input type="range" id="sl-size" min="3" max="40" value="15">
                     <span class="sl-v" id="sv-size">0.15</span>
                 </div>
                 <div class="sl-row">
-                    <span class="sl-n">Bloom</span>
+                    <span class="sl-n">光晕</span>
                     <input type="range" id="sl-bloom" min="0" max="30" value="14">
                     <span class="sl-v" id="sv-bloom">1.4</span>
                 </div>
@@ -883,9 +883,9 @@
 
         <!-- Actions -->
         <div class="actions">
-            <button class="ab" id="btn-pause">⏸ Pause</button>
-            <button class="ab" id="btn-shot">📷 Save</button>
-            <button class="ab" id="btn-fs">⛶ Fullscreen</button>
+            <button class="ab" id="btn-pause">⏸ 暂停</button>
+            <button class="ab" id="btn-shot">📷 保存</button>
+            <button class="ab" id="btn-fs">⛶ 全屏</button>
             <button class="ab" id="btn-guide">📖 操作指南</button>
         </div>
 
@@ -893,17 +893,17 @@
         <div class="cam-section">
             <div class="cam-row">
                 <div class="cam-dot" id="cam-dot"></div>
-                <span id="cam-status">Camera not started</span>
-                <button id="btn-cam" class="vis">Enable</button>
+                <span id="cam-status">摄像头未启动</span>
+                <button id="btn-cam" class="vis">启用</button>
             </div>
             <div class="cam-help" id="cam-help">
-                Camera blocked? Check browser address-bar permissions, or use Chrome/Edge on HTTPS.
+                摄像头被阻止？请检查浏览器地址栏中的权限设置，或使用 HTTPS 下的 Chrome/Edge。
             </div>
         </div>
 
     </div>
 
-    <div id="hint">Move cursor · Click &amp; hold to attract · 1–9 shapes · H hide · S save · F fullscreen</div>
+    <div id="hint">移动鼠标 · 点击并按住以吸引粒子 · 1–9 切换形状 · H 隐藏面板 · S 保存 · F 全屏</div>
     <div id="toast"></div>
 <!-- ── Three.js + Post-processing ────────────────────────── -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -1212,7 +1212,7 @@
     function cycleColor() {
         colorIdx = (colorIdx + 1) % PALETTE.length;
         applyColor(PALETTE[colorIdx]);
-        toast('👌 Color cycled');
+        toast('👌 已切换颜色');
     }
 
     // ═══════════════════════════════════════════════════════════
@@ -1459,9 +1459,9 @@
         if (controls) controls.autoRotate = true;
 
         dot.className = 'cam-dot';
-        status.innerText = 'Camera off';
+        status.innerText = '摄像头已关闭';
         status.style.color = '';
-        btnCam.innerText = 'Enable';
+        btnCam.innerText = '启用';
         btnCam.classList.add('vis');
         helpEl.classList.remove('vis');
     }
@@ -1484,7 +1484,7 @@
         const helpEl  = document.getElementById('cam-help');
 
         dot.className    = 'cam-dot warn';
-        status.innerText = 'Checking camera…';
+        status.innerText = '正在检查摄像头…';
         status.style.color = '';
         btnCam.classList.remove('vis');
         helpEl.classList.remove('vis');
@@ -1498,28 +1498,28 @@
         } catch (err) {
             dot.className      = 'cam-dot';
             status.style.color = '#ef4444';
-            btnCam.innerText   = 'Retry';
+            btnCam.innerText   = '重试';
             btnCam.classList.add('vis');
             helpEl.classList.add('vis');
 
             switch (err.name) {
                 case 'NotFoundError':
                 case 'DevicesNotFoundError':
-                    status.innerText = 'No camera found';
-                    helpEl.innerText = 'No webcam detected on this device. Connect one and click Retry. Mouse/touch interaction is fully active.';
+                    status.innerText = '未找到摄像头';
+                    helpEl.innerText = '此设备未检测到摄像头。请连接摄像头后点击“重试”。鼠标和触摸操作仍可正常使用。';
                     break;
                 case 'NotAllowedError':
                 case 'PermissionDeniedError':
-                    status.innerText = 'Camera permission denied';
-                    helpEl.innerText = 'Click the camera icon in the browser address bar → Allow, then click Retry.';
+                    status.innerText = '摄像头权限被拒绝';
+                    helpEl.innerText = '点击浏览器地址栏中的摄像头图标 → 选择“允许”，然后点击“重试”。';
                     break;
                 case 'NotReadableError':
                 case 'TrackStartError':
-                    status.innerText = 'Camera in use';
-                    helpEl.innerText = 'Another app is using the camera (Zoom, Teams, etc.). Close it and click Retry.';
+                    status.innerText = '摄像头正在使用';
+                    helpEl.innerText = '其他应用正在使用摄像头（如 Zoom、Teams 等）。请关闭相关应用后点击“重试”。';
                     break;
                 default:
-                    status.innerText = 'Camera unavailable';
+                    status.innerText = '摄像头不可用';
                     helpEl.innerText = `${err.name}: ${err.message}`;
             }
             return;
@@ -1528,9 +1528,9 @@
         // Camera confirmed accessible — stop test stream, hand off to MediaPipe
         testStream.getTracks().forEach(t => t.stop());
         cameraInited = true;
-        btnCam.innerText = 'Disable';
+        btnCam.innerText = '关闭';
         btnCam.classList.add('vis');
-        status.innerText = 'Loading AI model…';
+        status.innerText = '正在加载 AI 模型…';
 
         // ── Step 2: initialize MediaPipe (safe now — camera exists + permitted)
         handsInstance = new Hands({
@@ -1594,7 +1594,7 @@
                 // Smoothstep removes the twitchy feeling around the middle.
                 handTensionTarget = rawTension * rawTension * (3 - 2 * rawTension);
 
-                status.innerText   = 'Tracking hands ✓';
+                status.innerText   = '正在识别手部 ✓';
                 status.style.color = '#22c55e';
                 dot.className      = 'cam-dot on';
 
@@ -1603,7 +1603,7 @@
                 wasOK    = false;
                 handTensionTarget = 0.5;
                 if (controls) controls.autoRotate = true;
-                status.innerText   = 'No hands in frame';
+                status.innerText   = '画面中未检测到手';
                 status.style.color = '';
             }
         });
@@ -1616,8 +1616,8 @@
         cameraUtil.start()
             .then(() => {
                 dot.className    = 'cam-dot on';
-                status.innerText = 'Camera active — show hands';
-                btnCam.innerText = 'Disable';
+                status.innerText = '摄像头已开启 — 请伸出手掌';
+                btnCam.innerText = '关闭';
                 btnCam.classList.add('vis');
                 helpEl.classList.remove('vis');
             })
@@ -1626,9 +1626,9 @@
                 console.warn('MediaPipe camera error:', err);
                 cameraInited     = false;
                 dot.className    = 'cam-dot';
-                status.innerText = 'Camera failed';
+                status.innerText = '摄像头启动失败';
                 status.style.color = '#ef4444';
-                helpEl.innerText = err.message || 'Unknown error. Try refreshing.';
+                helpEl.innerText = err.message || '未知错误，请刷新页面重试。';
                 btnCam.innerText = 'Retry';
                 btnCam.classList.add('vis');
                 helpEl.classList.add('vis');
@@ -1784,23 +1784,23 @@
         isPaused = !isPaused;
         const btn = document.getElementById('btn-pause');
         btn.classList.toggle('active', isPaused);
-        btn.innerText = isPaused ? '▶ Resume' : '⏸ Pause';
+        btn.innerText = isPaused ? '▶ 继续' : '⏸ 暂停';
         if (!isPaused) animate();
     }
 
     function toggleFullscreen() {
         if (!document.fullscreenElement) {
             document.documentElement.requestFullscreen().catch(() => {});
-            document.getElementById('btn-fs').innerText = '⛶ Exit Full';
+            document.getElementById('btn-fs').innerText = '⛶ 退出全屏';
         } else {
             document.exitFullscreen();
-            document.getElementById('btn-fs').innerText = '⛶ Fullscreen';
+            document.getElementById('btn-fs').innerText = '⛶ 全屏';
         }
     }
 
     document.addEventListener('fullscreenchange', () => {
         if (!document.fullscreenElement)
-            document.getElementById('btn-fs').innerText = '⛶ Fullscreen';
+            document.getElementById('btn-fs').innerText = '⛶ 全屏';
     });
 
     function takeShot() {
@@ -1810,7 +1810,7 @@
             download: `flux-${Date.now()}.png`
         });
         document.body.appendChild(a); a.click(); document.body.removeChild(a);
-        toast('📷 Saved!');
+        toast('📷 已保存！');
     }
 
     // ═══════════════════════════════════════════════════════════
